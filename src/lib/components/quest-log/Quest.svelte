@@ -17,6 +17,12 @@
 	const toggleCompleted = ({ detail: completed }): void => {
 		dispatch('toggleCompleted', completed);
 	};
+
+	/**
+	 * For lists we can assume that if there are multiple '- `' we should display an s
+	 * @param str
+	 */
+	const showPlural = (str: string): string => (str?.split('- `').length > 2 ? 's' : '');
 </script>
 
 <div class="quest">
@@ -28,12 +34,17 @@
 	>
 		<span class="lore"><SvelteMarkdown source={quest.lore} /></span>
 		<span class="intro"><SvelteMarkdown source={quest.intro} /></span>
-		<h2>File</h2>
+
+		<h2 class="files">File{showPlural(quest.files)}</h2>
 		<span class="files"><SvelteMarkdown source={quest.files} /></span>
-		<h2>Goal</h2>
-		<h2>Links</h2>
+
+		<h2 class="goal">Goal{showPlural(quest.goal)}</h2>
 		<span class="goal"><SvelteMarkdown source={quest.goal} /></span>
+
+		<h2 class="links">Useful Links</h2>
 		<span class="links"><SvelteMarkdown source={quest.links} /></span>
+
+		<h2 class="hints">Hint{showPlural(quest.hints)}</h2>
 		<span class="hints"><SvelteMarkdown source={quest.hints} /></span>
 	</QuestAccordion>
 </div>
@@ -49,7 +60,30 @@
 		margin-top: 10px;
 	}
 
-	.lore {
+	span.lore {
+		display: block;
 		font-size: 0.75em;
+		margin-left: 1rem;
+		text-align: center;
+	}
+
+	span.intro {
+		display: block;
+		font-size: 0.825em;
+		margin-left: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	h2 {
+		text-align: left;
+	}
+
+	span.files,
+	span.goal,
+	span.links,
+	span.hints {
+		display: block;
+		font-size: 0.825em;
+		margin-left: -2rem;
 	}
 </style>

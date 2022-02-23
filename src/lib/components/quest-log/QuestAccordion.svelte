@@ -83,6 +83,6 @@
 
 	.title {
 		margin-left: 0.25em;
-		font-size: 0.925em;
+		font-size: 1em;
 	}
 </style>

@@ -59,7 +59,8 @@
 		top: 40px;
 		right: 0;
 		z-index: 9000;
-		width: 500px;
+		width: 600px;
+		max-width: 100vw;
 		height: 80vh;
 		overflow-y: scroll;
 	}
