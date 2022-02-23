@@ -14,7 +14,10 @@
 	export let completed = false;
 
 	let isOpen = false;
-	const toggle = () => (isOpen = !isOpen);
+
+	const toggle = (): void => {
+		isOpen = !isOpen;
+	};
 
 	const toggleCompleted = (completed: boolean): void => {
 		dispatch('toggleCompleted', completed);
