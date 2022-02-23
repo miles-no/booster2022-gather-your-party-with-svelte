@@ -1,10 +1,28 @@
+<script context="module" lang="ts">
+	import type { Session } from '$lib/types/session';
+	import type { Load } from '@sveltejs/kit';
+
+	export const prerender = true;
+
+	export const load: Load<{ session: Session }> = async ({ session }) => {
+		return {
+			props: { quests: session.quests },
+		};
+	};
+</script>
+
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/footer/Footer.svelte';
 	import '../app.css';
+	import QuestLog from '$lib/components/quest-log/QuestLog.svelte';
+	import type { Quests } from '$lib/types/quests';
+
+	export let quests: Quests;
 </script>
 
 <Header />
+<QuestLog {quests} />
 
 <main>
 	<slot />

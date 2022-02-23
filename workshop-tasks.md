@@ -85,7 +85,7 @@ one value whenever any referenced values change.
 - 1 point in **constitution** should increase the **hitpoints** with **5**.
 - 1 point in **wisdom** should increase the **mana** with **10**.
 - 1 point in **intelligence** should increase the **spellpower** with **2.5**.
-- When the **charisma** is **< 12** speech should be **Timid**, **> 12** speech should be **Well Spoken**, **> 16**
+- When the **charisma** is **<12** speech should be **Timid**, **>12** speech should be **Well Spoken**, **>16**
   speech should be **Charming**.
 
 #### Links
