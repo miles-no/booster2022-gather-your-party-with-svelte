@@ -20,7 +20,6 @@
 
 	/**
 	 * For lists we can assume that if there are multiple '- `' we should display an s
-	 * @param str
 	 */
 	const showPlural = (str: string): string => (str?.split('- `').length > 2 ? 's' : '');
 </script>
