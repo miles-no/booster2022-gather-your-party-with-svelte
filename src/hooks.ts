@@ -1,14 +1,14 @@
-import type { Session } from '$lib/types/session';
-import fs from 'fs';
-import path from 'path';
-import type { Quests } from '$lib/types/quests';
-import type { Quest } from '$lib/types/quest';
-
 /***
  * NOT PART OF WORKSHOP
  *
  * It should not be necessary to familiarize oneself with this file for the workshop.
  */
+
+import type { Session } from '$lib/types/session';
+import fs from 'fs';
+import path from 'path';
+import type { Quests } from '$lib/types/quests';
+import type { Quest } from '$lib/types/quest';
 
 const getPart = (key: string, text: string): string => {
 	const parts = text.split(`#### ${key}`);
