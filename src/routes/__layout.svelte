@@ -1,4 +1,13 @@
 <script context="module" lang="ts">
+	/***
+	 * NOT PART OF WORKSHOP
+	 *
+	 * It should not be necessary to familiarize oneself with this file for the workshop.
+	 *
+	 * As the filename might hint at, this file contains the layout of the application.
+	 *
+	 */
+
 	import type { Session } from '$lib/types/session';
 	import type { Load } from '@sveltejs/kit';
 

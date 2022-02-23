@@ -1,7 +1,12 @@
 <script lang="ts">
+	/***
+	 * NOT PART OF WORKSHOP
+	 *
+	 * It should not be necessary to familiarize oneself with this file for the workshop.
+	 */
 	import type { Quest } from '$lib/types/quest';
 	import SvelteMarkdown from 'svelte-markdown';
-	import QuestAccordion from '$lib/components/quest-log/Accordion.svelte';
+	import QuestAccordion from '$lib/components/quest-log/QuestAccordion.svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	const dispatch = createEventDispatcher();

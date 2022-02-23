@@ -1,6 +1,6 @@
 import type { Quests } from '$lib/types/quests';
 
-export interface Session {
+export type Session = {
 	readme: string;
 	quests: Quests;
 }

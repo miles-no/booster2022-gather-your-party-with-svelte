@@ -4,15 +4,10 @@ import path from 'path';
 import type { Quests } from '$lib/types/quests';
 import type { Quest } from '$lib/types/quest';
 
-/**
- * # Quest 1 - The Mighty Button
+/***
+ * NOT PART OF WORKSHOP
  *
- * #### Lore
- * #### Intro
- * #### Files
- * #### Goal
- * #### Links
- * #### Hints
+ * It should not be necessary to familiarize oneself with this file for the workshop.
  */
 
 const getPart = (key: string, text: string): string => {

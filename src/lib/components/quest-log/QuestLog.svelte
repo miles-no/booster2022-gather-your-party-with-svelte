@@ -1,4 +1,9 @@
 <script lang="ts">
+	/***
+	 * NOT PART OF WORKSHOP
+	 *
+	 * It should not be necessary to familiarize oneself with this file for the workshop.
+	 */
 	import type { Quests } from '$lib/types/quests';
 	import Quest from '$lib/components/quest-log/Quest.svelte';
 	import { fade } from 'svelte/transition';
