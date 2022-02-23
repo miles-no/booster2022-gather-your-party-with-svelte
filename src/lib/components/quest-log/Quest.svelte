@@ -34,16 +34,16 @@
 		<span class="lore"><SvelteMarkdown source={quest.lore} /></span>
 		<span class="intro"><SvelteMarkdown source={quest.intro} /></span>
 
-		<h2 class="files">File{showPlural(quest.files)}</h2>
+		<h2>File{showPlural(quest.files)}</h2>
 		<span class="files"><SvelteMarkdown source={quest.files} /></span>
 
-		<h2 class="goal">Goal{showPlural(quest.goal)}</h2>
+		<h2>Goal{showPlural(quest.goal)}</h2>
 		<span class="goal"><SvelteMarkdown source={quest.goal} /></span>
 
-		<h2 class="links">Useful Links</h2>
+		<h2>Useful Links</h2>
 		<span class="links"><SvelteMarkdown source={quest.links} /></span>
 
-		<h2 class="hints">Hint{showPlural(quest.hints)}</h2>
+		<h2>Hint{showPlural(quest.hints)}</h2>
 		<span class="hints"><SvelteMarkdown source={quest.hints} /></span>
 	</QuestAccordion>
 </div>
@@ -61,14 +61,14 @@
 
 	span.lore {
 		display: block;
-		font-size: 0.75em;
+		font-size: 0.75rem;
 		margin-left: 1rem;
 		text-align: center;
 	}
 
 	span.intro {
 		display: block;
-		font-size: 0.825em;
+		font-size: 0.825rem;
 		margin-left: 1rem;
 		margin-top: 1.5rem;
 	}
@@ -82,7 +82,7 @@
 	span.links,
 	span.hints {
 		display: block;
-		font-size: 0.825em;
+		font-size: 0.825rem;
 		margin-left: -2rem;
 	}
 </style>
