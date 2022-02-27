@@ -1,4 +1,37 @@
-# Quest 1 - The Mighty Button
+# Quest 1 - Choose your origin
+
+#### Lore - Unique Heroes
+
+Born different, but with one same goal on their mind.
+
+#### Intro
+
+One of the main qualities of components is its ability to pass data in and out.
+In Svelte one method to accomplish this is by exposing [props](https://svelte.dev/tutorial/declaring-props)
+and using [bindings](https://svelte.dev/tutorial/text-inputs), which is the 2-way binding for Svelte.
+
+#### Files
+
+- `src/lib/components/race-select/RaceSelect.svelte`
+- `src/routes/creator/index.svelte`
+
+#### Goal
+
+- The variable `race` should be exposed in the component RaceSelect
+- Changing the race of the character should be reflected in the parent component.
+
+#### Links
+
+- [Declaring props](https://svelte.dev/tutorial/declaring-props)
+- [Bindings](https://svelte.dev/tutorial/text-inputs)
+
+#### Hints
+
+- `npm run hint 1a`
+- `npm run hint 1b`
+- `npm run hint 1c`
+
+# Quest 2 - The Mighty Button
 
 #### Lore
 
@@ -31,6 +64,7 @@ into the inner button. Example: `<Button>The should be displayed inside the butt
 
 #### Links
 
+- [Props](https://svelte.dev/tutorial/declaring-props)
 - [Event Forwarding](https://svelte.dev/tutorial/event-forwarding)
 - [Component Bindings](https://svelte.dev/tutorial/component-bindings)
 - [Slots](https://svelte.dev/tutorial/slots)
@@ -38,28 +72,6 @@ into the inner button. Example: `<Button>The should be displayed inside the butt
 #### Hints
 
 - `npm run hint 1a`
-
-# Quest 2 - ??
-
-#### Lore
-
-No one hero is the same! Let them show their uniqueness
-
-#### Intro
-
-Should we change bindings from attributes to class or race?
-
-#### Files
-
-#### Goal
-
-#### Links
-
-- [Text Inputs](https://svelte.dev/tutorial/text-inputs)
-
-#### Hints
-
-- `npm run hint 2a`
 
 # Quest 3 - Boosting our Heroes stats
 
@@ -273,30 +285,6 @@ more information about the characters if you'd like.
 
 - `npm run hint 7a`
 - `npm run hint 7b`
-
-# Quest 8 - ???
-
-[comment]: <> (TODO Do we have a Quest 8?)
-
-#### Lore
-
-#### Intro
-
-#### Files
-
--
-
-#### Goal
-
--
-
-#### Links
-
--
-
-#### Hints
-
-- `npm run hint 8a`
 
 # Titan Quest 1 - Select your Hero!
 

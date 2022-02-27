@@ -1,7 +1,15 @@
 import * as cowsay from 'cowsay';
 
 const hints = {
-	'1a': 'Hint number 1 will help you!',
+	'1a': `\
+In the file \`src/routes/creator/index.svelte\` 
+you can set \`SHOW_CHARACTER_RAW_DATA\` to \`true\`
+to view the character data at the bottom of the page.`,
+	'1b': '\
+Take a look at the referenced links for examples.',
+	'1c': '\
+Have you tried exporting `let race` in RaceSelect?',
+
 	'2a': `\
 Hint number 2 will not help you so much, but it is longer and a lot cooler 🆒
 It also includes line breaks which are
@@ -56,7 +64,7 @@ is over can be a way to implement this.`,
 
 const args = process.argv.slice(2);
 
-const hintArg = args[0];
+const hintArg = args[0]?.toLowerCase();
 
 if (hintArg === undefined) {
 	console.error('ERROR: Hint id must be specified. Example `npm run hint 1a`.');

@@ -83,10 +83,12 @@
 			<input class="input-content" bind:value={name} />
 		</label>
 
+		<!-- Quest 1 - Choose your Origin: Enter HTML markup here START -->
 		<label class="input" for="race">
 			<span>Race</span>
-			<RaceSelect id="race" bind:race />
+			<RaceSelect id="race" />
 		</label>
+		<!-- Quest 1 - Choose your Origin: Enter HTML markup here END -->
 
 		<label class="input">
 			<span>Class</span>
