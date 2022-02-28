@@ -41,16 +41,15 @@ _click_ _click_.... Our heroes journey can not start if we can not even click a 
 
 For consistent design and functionality we wish to create a Button component that can be reused in our application.
 
-The component currently has the 3 variables `variant`, `small` and `disabled`, but they are not exposed, and can not be
-set by parent components.
-
-Read about [Component Bindings](https://svelte.dev/tutorial/component-bindings) to find out more.
+The component currently has the 3 variables `variant`, `small` and `disabled`, but they are currently not exposed,
+and can not be set by parent components.
 
 We also wish to expose the `click` event of the inner button so any parent components, as that is the main use case for
 a button.
 
-And lastly our button should also have some content. We wish for anything that is inside our Buttons tag to be reflected
-into the inner button. Example: `<Button>The should be displayed inside the button</Button>`
+Lastly our button should also have some content. We wish for anything that is inside our Buttons tag to be reflected
+into the inner button. Example: `<Button>The should be displayed inside the button</Button>`.
+In Svelte this is done using [Slots](https://svelte.dev/tutorial/slots).
 
 #### Files
 
@@ -64,14 +63,15 @@ into the inner button. Example: `<Button>The should be displayed inside the butt
 
 #### Links
 
-- [Props](https://svelte.dev/tutorial/declaring-props)
+- [Declaring props](https://svelte.dev/tutorial/declaring-props)
 - [Event Forwarding](https://svelte.dev/tutorial/event-forwarding)
-- [Component Bindings](https://svelte.dev/tutorial/component-bindings)
+- [DOM Event Forwarding](https://svelte.dev/tutorial/dom-event-forwarding)
 - [Slots](https://svelte.dev/tutorial/slots)
 
 #### Hints
 
-- `npm run hint 1a`
+- `npm run hint 2a`
+- `npm run hint 2b`
 
 # Quest 3 - Boosting our Heroes stats
 
@@ -82,8 +82,14 @@ stats.
 
 #### Intro
 
-The point of this task is to use [Reactive Declarations](https://svelte.dev/tutorial/reactive-declarations) to change
+Currently, the attributes do not affect the stats in any way.
+In the goals section you can see how we wish for attributes to effect stats,
+you should be able to see any changes as they occur when it works correctly.
+
+To accomplish our goal we can use [Reactive Declarations](https://svelte.dev/tutorial/reactive-declarations) to change
 one value whenever any referenced values change.
+
+The parent component is already passing the attributes to the Stats component in the character creator.
 
 #### Files
 
@@ -107,6 +113,8 @@ one value whenever any referenced values change.
 #### Hints
 
 - `npm run hint 3a`
+- `npm run hint 3b`
+- `npm run hint 3c`
 
 # Quest 4 - Skills to desire
 
@@ -116,7 +124,8 @@ Our heroes look mighty powerful! But they do still not seem satisfied... Maybe w
 
 #### Intro
 
-The current solution provides a list of skills and those selected. The selection process offers no animation and just snaps.
+The current solution provides a list of skills and those selected.
+The selection process offers no animation and just snaps into the correct positions.
 
 We want an animation to occur when selecting and removing skills.
 
@@ -136,6 +145,7 @@ We want an animation to occur when selecting and removing skills.
 #### Hints
 
 - `npm run hint 4a`
+- `npm run hint 4b`
 
 # Quest 5 - Indecisive Heroes
 
@@ -150,6 +160,8 @@ into [Motion (Tween/Spring)](https://svelte.dev/tutorial/tweened) and how you ca
 
 When this is working for `addPoint` and `subtractPoint` fill inn the `randomize` button. Remember to also update and
 animate `pointsRemaining`.
+
+Play around with the motion settings to see how it effects the animation
 
 #### Files
 
@@ -167,6 +179,9 @@ animate `pointsRemaining`.
 #### Hints
 
 - `npm run hint 5a`
+- `npm run hint 5b`
+- `npm run hint 5c`
+- `npm run hint 5d`
 
 # Quest 6 - Beauties and the Beasts
 
