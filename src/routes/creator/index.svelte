@@ -13,9 +13,10 @@
 	import Stats from '$lib/components/stats/Stats.svelte';
 	import RaceSelect from '$lib/components/race-select/RaceSelect.svelte';
 	import { apiFetch } from '$lib/utils/api-fetch';
+	import CharacterCreatorDebug from '$lib/components/character-creator-debug/CharacterCreatorDebug.svelte';
 
 	// Toggle this on to display the current character data JSON at the bottom of the character creation page.
-	const SHOW_CHARACTER_RAW_DATA = false;
+	const SHOW_CHARACTER_RAW_DATA = true;
 
 	let saveCharacterPromise: Promise<Character>;
 	let isSavingCharacter = false;
@@ -49,20 +50,12 @@
 		portrait,
 		attributes,
 		skills,
-	};
+	} as UpsertCharacterRequest;
 
 	// TODO Should we validate inputs in the frontend as well as the backend?
 	const handleSubmit = () => {
 		isSavingCharacter = true;
-		const character: UpsertCharacterRequest = {
-			name,
-			race,
-			primaryClass,
-			secondaryClass,
-			portrait,
-			attributes,
-			skills,
-		};
+
 		saveCharacterPromise = apiFetch<Character>('/api/characters', {
 			method: 'POST',
 			body: JSON.stringify(character),
@@ -161,12 +154,7 @@
 		&cross; Error saving character, see console for more info.
 	{/await}
 
-	{#if SHOW_CHARACTER_RAW_DATA}
-		<div class="rpgui-container framed-grey debug-character-data">
-			<p>DEBUG CHARACTER DATA</p>
-			<pre><code>{JSON.stringify(character, undefined, 2)}</code></pre>
-		</div>
-	{/if}
+	<CharacterCreatorDebug display={SHOW_CHARACTER_RAW_DATA} {character} />
 </section>
 
 <style>
@@ -201,20 +189,5 @@
 	.suffix {
 		position: absolute;
 		right: -1rem;
-	}
-
-	.debug-character-data {
-		background: #fff;
-	}
-
-	.debug-character-data p {
-		color: #000;
-		font-weight: 300;
-		text-shadow: none;
-	}
-
-	.debug-character-data pre {
-		font-size: 0.825em;
-		line-height: 1.25;
 	}
 </style>
