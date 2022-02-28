@@ -1,6 +1,6 @@
 # Quest 1 - Choose your origin
 
-#### Lore - Unique Heroes
+#### Lore
 
 Born different, but with one same goal on their mind.
 
