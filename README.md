@@ -36,6 +36,15 @@ Use this knowledge at your own discretion, but we HIGHLY recommend not looking a
 
 To build the application run: `npm run build`
 
+### Alternative: Workshop using Codesandbox
+
+1. Go to `https://codesandbox.io`
+2. Login with your user
+3. Click `Create Sandbox`
+4. Select `Import Project`
+5. Paste in `https://github.com/miles-no/booster2022-gather-your-party-with-svelte`
+6. Click `Import and Fork`
+
 ## Links
 
 - [Miles](https://www.miles.no)
