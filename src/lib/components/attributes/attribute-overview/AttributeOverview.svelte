@@ -52,8 +52,6 @@
 
 		pointsRemaining = 0;
 		value = allocation;
-		displayedPointsRemaining.set(pointsRemaining);
-		displayedAttributes.set(allocation);
 	};
 
 	function getAttributes(displayedAttributes: AttributeAllocation): [Attribute, number][] {
