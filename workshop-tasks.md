@@ -10,6 +10,7 @@ One of the main qualities of components is its ability to pass data in and out.
 In Svelte, one way to accomplish this is by exposing [props](https://svelte.dev/tutorial/declaring-props)
 and using [bindings](https://svelte.dev/tutorial/text-inputs), which is the two-way binding for Svelte.
 
+
 #### Files
 
 - `src/lib/components/race-select/RaceSelect.svelte`
@@ -17,7 +18,7 @@ and using [bindings](https://svelte.dev/tutorial/text-inputs), which is the two-
 
 #### Goal
 
-- The variable `race` should be exposed in the component RaceSelect
+- Changing the race selector should update the character data, see the 'Character Debug' panel for details. (See hint 1a)
 - Changing the race of the character should be reflected in the parent component.
 
 #### Links
