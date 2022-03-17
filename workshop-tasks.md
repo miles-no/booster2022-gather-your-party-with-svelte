@@ -10,7 +10,6 @@ One of the main qualities of components is its ability to pass data in and out.
 In Svelte, one way to accomplish this is by exposing [props](https://svelte.dev/tutorial/declaring-props)
 and using [bindings](https://svelte.dev/tutorial/text-inputs), which is the two-way binding for Svelte.
 
-
 #### Files
 
 - `src/lib/components/race-select/RaceSelect.svelte`
