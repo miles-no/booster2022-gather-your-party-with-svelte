@@ -82,3 +82,33 @@ body {
 	-ms-user-select: text;
 	user-select: text;
 }
+
+.active-quest-indicator::after {
+	display: block;
+	content: '';
+	background-image: url('$lib/_workshop-internals/style/rpgui/img/icons/exclamation.png');
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	filter: hue-rotate(326deg) saturate(3) sepia(0.5);
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	-webkit-animation-duration: 1s;
+	animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-name: flash;
+	animation-iteration-count: 3;
+}
+
+@keyframes flash {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
