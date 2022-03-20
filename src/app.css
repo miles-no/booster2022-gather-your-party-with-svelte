@@ -89,7 +89,7 @@ body {
 	background-image: url('$lib/_workshop-internals/style/rpgui/img/icons/exclamation.png');
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
-	filter: hue-rotate(326deg) saturate(3) sepia(0.5);
+	filter: hue-rotate(326deg) saturate(3) sepia(0.5) contrast(3);
 	width: 40px;
 	height: 40px;
 	position: absolute;
