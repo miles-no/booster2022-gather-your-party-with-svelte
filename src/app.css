@@ -101,6 +101,53 @@ body {
 	animation-iteration-count: 3;
 }
 
+.active-quest-indicator[data-quest-1='header']::after,
+.active-quest-indicator[data-quest-7]::after {
+	margin-top: -1.625rem;
+	margin-left: 14rem;
+}
+
+.active-quest-indicator[data-quest-1='label']::after {
+	margin-left: 3rem;
+	margin-top: -1.75rem;
+}
+
+.active-quest-indicator[data-quest-1='debug']::after {
+	margin-left: 10.5rem;
+	margin-top: -1.625rem;
+	transform: scale(0.625);
+}
+
+.active-quest-indicator[data-quest-2]::after {
+	margin-top: -1.125rem;
+	margin-left: 10rem;
+}
+
+.active-quest-indicator[data-quest-3]::after {
+	margin-left: 3.25rem;
+	margin-top: -1.75rem;
+}
+
+.active-quest-indicator[data-quest-4]::after {
+	margin-left: 3.75rem;
+	margin-top: -1.75rem;
+}
+
+.active-quest-indicator[data-quest-5]::after {
+	margin-left: 7rem;
+	margin-top: -1.75rem;
+}
+
+.active-quest-indicator[data-quest-6='label']::after {
+	margin-left: 5.75rem;
+	margin-top: -1.75rem;
+}
+
+.active-quest-indicator[data-quest-6='img']::after {
+	margin-left: -2rem;
+	margin-top: -2rem;
+}
+
 @keyframes flash {
 	0%,
 	50%,

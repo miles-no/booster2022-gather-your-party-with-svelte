@@ -76,7 +76,7 @@
 		</label>
 
 		<label class="input" for="race">
-			<span data-quest-1>Race</span>
+			<span data-quest-1="label">Race</span>
 			<RaceSelect id="race" bind:value={race} />
 		</label>
 
@@ -119,7 +119,7 @@
 		{/if}
 
 		<label class="input" for="portrait">
-			<span data-quest-6>Portrait</span>
+			<span data-quest-6="label">Portrait</span>
 			<PortraitPicker id="portrait" bind:value={portrait} />
 		</label>
 
