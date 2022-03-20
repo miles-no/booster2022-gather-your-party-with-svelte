@@ -41,6 +41,6 @@
 
 	onDestroy(() => {
 		observer?.disconnect();
-		currentQuestUnsubscriber();
+		currentQuestUnsubscriber?.();
 	});
 </script>
