@@ -114,7 +114,7 @@ The parent component is already passing the attributes to the Stats component in
 - Mana equals wisdom x 10.
 - Spellpower equals intelligence x 2.5.
 - When charisma is < 12 speech should be `Timid`, >= 12 charisma should be `Well Spoken`,
-  and >16 charisma should be `Charming`.
+  and >= 16 charisma should be `Charming`.
 
 #### Links
 
