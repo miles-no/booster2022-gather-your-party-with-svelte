@@ -104,6 +104,10 @@ inside your html file.
 	background-image: url('$lib/_workshop-internals/style/rpgui/img/button-hover.png');
 }
 
+*:focus {
+	box-shadow: 0 0 0 3px rgba(198, 128, 62, 1);
+}
+
 /* button clicked */
 .rpgui-button.down,
 .rpgui-button:active {
